@@ -1,7 +1,15 @@
 a:link {
     text-decoration: none;
 }
-ul li{
+
+a:hover,
+.type_recommend:hover,
+.right_header span:hover,
+.hot_city_div > div > span:hover{
+    color: #FF1268;
+}
+
+ul li {
     list-style: none;
 }
 
@@ -170,25 +178,32 @@ ul li{
 .type_children {
     background-position-y: -181px;
 }
-.type_holiday{
+
+.type_holiday {
     background-position-y: -235px;
 }
-.type_concert{
+
+.type_concert {
     background-position-y: -293px;
 }
-.type_carlo{
+
+.type_carlo {
     background-position-y: -355px;
 }
-.type_ballet{
+
+.type_ballet {
     background-position-y: -415px;
 }
-.type_cartoon{
+
+.type_cartoon {
     background-position-y: -475px;
 }
-.type_travel{
+
+.type_travel {
     background-position-y: -535px;
 }
-.concert{
+
+.concert {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
@@ -198,41 +213,51 @@ ul li{
     box-sizing: border-box;
     margin-bottom: 15px;
 }
-.concert_header{
+
+.concert_header {
 
 }
-.concert_header_show{
+
+.concert_header_show {
     font-size: 24px;
 }
-.concert_more{
+
+.concert_more {
     color: #9B9B9B;
     float: right;
 }
-.concert_list_all{
+
+.concert_list_all {
     margin-top: 15px;
 }
-.concert_list_big_img{
+
+.concert_list_big_img {
     display: inline-block;
 }
-.concert_img{
+
+.concert_img {
     width: 270px;
     height: auto;
 }
-.concert_list{
+
+.concert_list {
     display: inline-block;
     vertical-align: top;
     width: 870px;
     margin-left: 10px;
 }
-.concert_list_small_img{
+
+.concert_list_small_img {
     width: 118px;
     height: 158px;
     border: 1px solid #efefef;
 }
-.concert_list_small{
+
+.concert_list_small {
     display: inline-block;
 }
-.concert_list_small_detail{
+
+.concert_list_small_detail {
     display: inline-block;
     vertical-align: top;
     width: 141px;
@@ -240,7 +265,8 @@ ul li{
     position: relative;
     height: 159px;
 }
-.concert_title{
+
+.concert_title {
     color: #4A4A4A;
     font-size: 14px;
     line-height: 22px;
@@ -248,79 +274,95 @@ ul li{
     box-sizing: border-box;
     /*height: 50px;*/
 }
-.concert_address{
+
+.concert_address {
     color: #9B9B9B;
     font-size: 12px;
     margin-top: 14px;
 }
-.concert_time{
+
+.concert_time {
     font-size: 12px;
     color: #9B9B9B;
     margin-top: 6px;
 }
-.concert_price{
+
+.concert_price {
     color: #FF1268;
     font-size: 16px;
     position: absolute;
     bottom: 0;
 }
-.concert_list_div{
+
+.concert_list_div {
     display: inline-block;
     margin-left: 14px;
 }
-.concert_margin{
+
+.concert_margin {
     margin-bottom: 40px;
 }
-.title_long{
+
+.title_long {
     -webkit-box-orient: vertical;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     overflow: hidden;
 }
-.index_foot{
+
+.index_foot {
     width: 1200px;
     margin: 0 auto;
     height: 100%;
 }
+
 .index_foot > ul li {
     float: left;
     margin: 11px 0;
     padding: 0px 25px;
     border-right: 1px solid #141212;
 }
-.index_foot > ul{
+
+.index_foot > ul {
     height: 42px;
     font-size: 14px;
 }
-.foot_log{
+
+.foot_log {
     float: left;
 }
-.weixin_foot{
+
+.weixin_foot {
     width: 87px;
 }
-.weixin_div{
+
+.weixin_div {
     width: 88px;
     height: 87px;
     float: left;
     text-align: center;
     margin-left: 40px;
 }
-.weixin_dowm{
+
+.weixin_dowm {
     display: block;
     color: #0e0d0ddd;
 }
-.foot_info{
+
+.foot_info {
     width: 100%;
     height: 115px;
     padding-left: 67px;
     box-sizing: border-box;
 }
-.foot_img{
+
+.foot_img {
     width: 300px;
     height: 100%;
     float: left;
 }
-.foot_license{
+
+.foot_license {
     width: 70%;
     height: 100%;
     float: left;
@@ -328,18 +370,69 @@ ul li{
     padding-left: 30px;
     font-size: 13px;
 }
+
 .foot_license table tr td {
     border-right: 1px solid #141212;
     padding: 6px 2px 0px 0px;
 }
-.clear_border_right{
+
+.clear_border_right {
     border-right: 0px !important;
 }
-.customer_button{
+
+.customer_button {
     background-color: #ff1268;
     border-radius: 26px;
     width: 124px;
     height: 32px;
     border: 0;
     color: #ffffff;
+}
+.city_big_div{
+    position: absolute;
+    top: 69px;
+    left: 192px;
+    border: 1px solid #F4F4F4;
+    z-index: 999;
+    background-color: #ffffff;
+    padding: 0 20px 10px;
+    line-height: 50px;
+}
+.city_big_div:after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 143px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FFF #FFF transparent transparent;
+    box-shadow: 1px -1px 1px #ccc;
+    transform: rotate(-45deg);
+}
+.hot_city_div{
+    display: -webkit-box;
+    border-bottom: 1px solid #EEE;
+}
+.other_city_div{
+    display: -webkit-box;
+}
+table tr td{
+    padding: 0px;
+    width: 45px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.city_big_div > div > span:first-child{
+    padding-right: 26px;
+}
+.country{
+    color: #FF1268;
+    background-color: #fff4f8;
+    padding: 5px 10px;
+}
+.hot_city_div > div > span{
+    padding: 5px;
+}
+.other_all_city{
+    margin-top: 10px;
 }
