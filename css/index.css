@@ -3,7 +3,7 @@ a:link {
     color: #141212;
 }
 
-a:hover{
+a:hover {
     color: #FF1268;
 }
 
@@ -204,12 +204,11 @@ ul li {
 .concert {
     width: 1200px;
     height: 100%;
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
     padding: 20px;
     border: 1px solid #EBEBEB;
     /*把边框和内边距放入框中。*/
     box-sizing: border-box;
-    margin-bottom: 15px;
 }
 
 .concert_header {
@@ -317,7 +316,7 @@ ul li {
 .index_foot > ul li {
     float: left;
     margin: 11px 0;
-    padding: 0px 25px;
+    padding: 0 25px;
     border-right: 1px solid #141212;
 }
 
@@ -371,11 +370,11 @@ ul li {
 
 .foot_license table tr td {
     border-right: 1px solid #141212;
-    padding: 6px 2px 0px 0px;
+    padding: 6px 2px 0 0;
 }
 
 .clear_border_right {
-    border-right: 0px !important;
+    border-right: 0 !important;
 }
 
 .customer_button {
@@ -386,49 +385,59 @@ ul li {
     border: 0;
     color: #ffffff;
 }
-.city_big_div{
+
+.city_big_div {
     position: absolute;
     top: 69px;
     left: 192px;
     border: 1px solid #F4F4F4;
-    z-index: 999;
+    z-index: 10;
     background-color: #ffffff;
     padding: 0 20px 10px;
     line-height: 50px;
     display: none;
 }
-.city_big_div:after{
+
+.city_big_div:after {
     left: 143px;
 }
-.hot_city_div{
+
+.hot_city_div {
     display: -webkit-box;
     border-bottom: 1px solid #EEE;
 }
-.other_city_div{
+
+.other_city_div {
     display: -webkit-box;
 }
-.other_all_city table tr td{
-    padding: 0px;
+
+.other_all_city table tr td {
+    padding: 0;
     width: 45px;
     font-size: 16px;
     line-height: 28px;
 }
-.city_big_div > div > span:first-child{
+
+.city_big_div > div > span:first-child {
     padding-right: 26px;
 }
-.country{
+
+.country {
     color: #FF1268;
     background-color: #fff4f8;
     padding: 5px 10px;
 }
-.hot_city_div > div > span{
+
+.hot_city_div > div > span {
     padding: 5px;
 }
-.other_all_city{
+
+.other_all_city {
     margin-top: 10px;
 }
-.user_login{
-    z-index: 999;
+
+.user_login {
+    z-index: 10;
     background-color: #FFF;
     position: absolute;
     width: 133px;
@@ -439,35 +448,50 @@ ul li {
     top: 65px;
     display: none;
 }
-.user_login:after{
+
+.user_login:after {
     left: 60px;
 }
-.user_login span{
+
+.user_login span {
     display: block;
     border-bottom: 1px solid #F2F2F2;
 }
 
-.right_div_login span:hover{
+.right_div_login span:hover {
     color: #FF1268;
     background-color: #fff4f8;
 }
-.qr_code{
-    z-index: 999;
+
+.qr_code_fixed {
+    z-index: 10;
+    position: absolute;
+    top: 81px;
+    left: -91px;
+    height: 82px;
+    box-shadow: 1px -1px 1px #ccc;
+    display: none;
+}
+
+.qr_code {
+    z-index: 10;
     position: absolute;
     top: 62px;
     height: 82px;
     box-shadow: 1px -1px 1px #ccc;
     display: none;
 }
-.qr_img{
+
+.qr_img {
     width: 80px;
     height: 80px;
 }
-.qr_code:after{
+
+.qr_code:after {
     left: 36px;
 }
 
-.city_big_div:after, .user_login:after, .qr_code:after{
+.city_big_div:after, .user_login:after, .qr_code:after {
     content: '';
     position: absolute;
     top: -5px;
@@ -476,4 +500,66 @@ ul li {
     border-color: #FFF #FFF transparent transparent;
     box-shadow: 1px -1px 1px #ccc;
     transform: rotate(-45deg);
+}
+
+.qr_code_fixed:after {
+    content: '';
+    position: absolute;
+    top: 31px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FFF #FFF transparent transparent;
+    box-shadow: 1px -1px 1px #ccc;
+    transform: rotate(45deg);
+    right: -5px;
+}
+
+.fixed_div {
+    position: fixed;
+    right: 12px;
+    bottom: 0;
+    width: 78px;
+    border: 1px solid #EBEBEB;
+    background-color: #FFF;
+}
+
+.on_customer {
+    background: url("../img/TB1.FXkxTtYBeNjy1XdXXXXyVXa-64-180.png") no-repeat;
+    width: 38px;
+    height: 38px;
+    background-position: 6px -21px;
+    margin: 0 auto;
+    background-size: 87%;
+}
+
+.customer_div {
+    text-align: center;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.customer_p {
+    font-size: 12px;
+}
+
+.down_app {
+    background: url("../img/TB1.FXkxTtYBeNjy1XdXXXXyVXa-64-180.png") no-repeat;
+    width: 42px;
+    height: 34px;
+    margin: 10px auto -10px auto;
+    background-size: 100%;
+}
+
+.back_top {
+    background: url("../img/TB1.FXkxTtYBeNjy1XdXXXXyVXa-64-180.png") no-repeat;
+    width: 42px;
+    height: 34px;
+    margin: 7px auto;
+    background-size: 87%;
+    background-position: 8px -68px;
+}
+
+.div_back_top {
+    line-height: 8px;
+    height: 66px;
+    text-align: center;
 }
