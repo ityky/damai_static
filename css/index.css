@@ -77,16 +77,16 @@ ul li {
 }
 
 .search_header_input {
-    width: 300px;
-    height: 46px;
-    border-radius: 46px;
+    width: 231px;
+    height: 44px;
+    border-radius: 46px 0 0 46px;
     border: 1px solid #f8f8f8;
     background-color: #f8f8f8;
     font-size: 16px;
     margin-left: 26px;
     position: absolute;
     padding-left: 50px;
-    top: 13px;
+    top: 14px;
 }
 
 .search_header_div {
@@ -600,4 +600,9 @@ ul li {
 
 .span_font_size_12 {
     font-size: 12px;
+}
+.search_header_input:focus{
+    outline:none;
+    border: 1px solid #FF1268;
+    /*border-radius: 46px;*/
 }

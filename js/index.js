@@ -30,11 +30,14 @@ $(function () {
     //当滚动条处于距离顶部100px以下，跳转顶部连接消失
     $(window).scroll(function () {
        if($(window).scrollTop() > 100){
-            $(".div_back_top").fadeIn(1000);
+            $(".div_back_top").css('display','block');
        }else {
-            $(".div_back_top").fadeOut(1000);
+            $(".div_back_top").css('display', 'none');
        }
     });
+    if($(window).scrollTop() < 100){
+        $(".div_back_top").css('display', 'none');
+    }
     //返回顶部按钮
     $(".div_back_top").click(function () {
         $('body,html').animate({scrollTop:0},1000);
