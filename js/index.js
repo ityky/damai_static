@@ -23,6 +23,8 @@ $(function () {
     displayBlockOrNone(".location_header",".city_big_div");
     //首页登录悬浮显示，隐藏
     displayBlockOrNone(".right_div_login",".user_login");
+    //首页二维码悬浮显示，隐藏
+    displayBlockOrNone(".right_div_down",".qr_code");
 });
 
 /**
