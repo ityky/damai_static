@@ -6,7 +6,7 @@ $(function () {
         //在slide之间设置距离
         spaceBetween: 30,
         // 自动播放
-        autoplay:true,
+        autoplay: true,
         // 是否循环播放
         loop: true,
         pagination: {
@@ -20,14 +20,23 @@ $(function () {
         },
     });
     //首页全国悬浮显示,隐藏
-    $(".location_header").on(
-        {
-            mouseenter: function () {
-                $(".city_big_div").css('display', 'block');
-            },
-            mouseleave: function () {
-                $(".city_big_div").css('display', 'none');
-            }
-        }
-    );
+    displayBlockOrNone(".location_header",".city_big_div");
+    //首页登录悬浮显示，隐藏
+    displayBlockOrNone(".right_div_login",".user_login");
 });
+
+/**
+ * 给选择器添加鼠标移到显示，移出隐藏
+ * @param select 选择器
+ * @param div 显示隐藏div
+ */
+function displayBlockOrNone(select, div) {
+    $(select).on({
+        mouseenter: function () {
+            $(div).css('display', 'block');
+        },
+        mouseleave: function () {
+            $(div).css('display', 'none');
+        }
+    })
+}

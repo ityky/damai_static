@@ -435,3 +435,34 @@ table tr td{
 .other_all_city{
     margin-top: 10px;
 }
+.user_login{
+    z-index: 999;
+    background-color: #FFF;
+    position: absolute;
+    width: 133px;
+    text-align: center;
+    line-height: 49px;
+    border: 1px solid #F2F2F2;
+    left: -22px;
+    top: 65px;
+    display: none;
+}
+.user_login span{
+    display: block;
+    border-bottom: 1px solid #F2F2F2;
+}
+.user_login:after{
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    top: -6px;
+    left: 60px;
+    box-shadow: 1px -1px 1px #ccc;
+    border-color: #FFF #FFF transparent transparent;
+    transform: rotate(-45deg);
+}
+.right_div_login span:hover{
+    color: #FF1268;
+    background-color: #fff4f8;
+}
