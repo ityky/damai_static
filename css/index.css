@@ -3,7 +3,14 @@ a:link {
     color: #141212;
 }
 
-a:hover {
+a:hover, a p:hover {
+    color: #FF1268;
+}
+
+.concert_list_small_detail div:hover,
+.index_foot ul li:hover,
+.img_title:hover,
+.big_img_title_price:hover {
     color: #FF1268;
 }
 
@@ -230,6 +237,7 @@ ul li {
 
 .concert_list_big_img {
     display: inline-block;
+    position: relative;
 }
 
 .concert_img {
@@ -562,4 +570,34 @@ ul li {
     line-height: 8px;
     height: 66px;
     text-align: center;
+}
+
+.big_img_title {
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    bottom: 4px;
+    width: 270px;
+    height: 115px;
+    color: #FFF;
+    padding: 8px 5px 0 8px;
+    box-sizing: border-box;
+}
+
+.big_img_title_price {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.img_title {
+    margin: 8px 0;
+}
+
+.span_font_size_14 {
+    font-size: 14px;
+}
+
+.span_font_size_12 {
+    font-size: 12px;
 }
