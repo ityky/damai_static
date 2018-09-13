@@ -1,11 +1,9 @@
 a:link {
     text-decoration: none;
+    color: #141212;
 }
 
-a:hover,
-.type_recommend:hover,
-.right_header span:hover,
-.hot_city_div > div > span:hover{
+a:hover{
     color: #FF1268;
 }
 
@@ -397,6 +395,7 @@ ul li {
     background-color: #ffffff;
     padding: 0 20px 10px;
     line-height: 50px;
+    display: none;
 }
 .city_big_div:after{
     content: '';
